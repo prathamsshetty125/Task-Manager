@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TaskFlow | Task Manager</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <main class="app">
+            <header class="header">
+                <p class="eyebrow">MY TASK 4 WEB DEVELOPMENT HACKEREARTH</p>
+                <h1>Task<span>MANAGER</span> ✨</h1>
+                <p class="subtitle">Small steps. Big achievements.</p>
+            </header>
+
+            <section class="task-card">
+                <form id="task-form">
+                    <input type="text" id="task-input" placeholder="What needs to get done?" autocomplete="off"
+                        aria-label="Enter a new task">
+                    <button type="submit" class="add-btn">+ Add Task</button>
+                </form>
+
+                <p id="error-message" class="error" role="alert"></p>
+
+                <div class="task-summary">
+                    <div>
+                        <h2>My Tasks</h2>
+                        <p id="task-counter">0 tasks pending</p>
+                    </div>
+                    <span class="task-icon">✓</span>
+                </div>
+
+                <nav class="filters" aria-label="Filter tasks">
+                    <button class="filter active" data-filter="all">All</button>
+                    <button class="filter" data-filter="pending">Pending</button>
+                    <button class="filter" data-filter="completed">Completed</button>
+                </nav>
+
+                <ul id="task-list" class="task-list"></ul>
+
+                <p id="empty-message" class="empty-message">
+                    No tasks here yet. Add your first task!
+                </p>
+
+                <footer class="footer">
+                    Stay focused. You've got this! 🚀
+                </footer>
+            </section>
+        </main>
+    </body>
+
+</html>
